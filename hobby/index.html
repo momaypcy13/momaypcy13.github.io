@@ -36,13 +36,24 @@
          background-color: #f6f9f2;
          padding:30px;
          }
+         .anchor{
+         display: flex;
+         }
          .l_container{
-         max-width:50%;
-         text-align: left;
+         flex: 70%;
          }
          .r_container{
-         max-width: 100%;
-         text-align: right;
+         flex: 30%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;  /* Centering y-axis */
+         align-items :center; /* Centering x-axis */
+         }
+         .icon{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;  /* Centering y-axis */
+         align-items :center; /* Centering x-axis */
          }
       </style>
    </head>
@@ -51,7 +62,7 @@
       <div class="page">
          <img src="img/crochet2.jpg">
          <p class="headline"> Crochet </p>
-         <div>
+         <div class="anchor">
             <div class="l_container">
                <p> I first discovered my love for crochet when I was young, attending church in Thailand. The community there was welcoming and warm, and they taught me the basics of crocheting. I remember learning how to make my first crochet bag with their guidance. From that moment, I was hooked! Over time, I started to experiment and challenge myself, moving on to crochet tops, dresses, and skirts. It became more than just a craft—it became a form of self-expression and creativity. </p>
                <p>
@@ -59,7 +70,9 @@
                </p>
             </div>
             <div class="r_container">
-               <img src="img/crochet%20fashion.jpg">
+               <div class="icon">
+                  <img src="img/crochet%20fashion.jpg" width=250px height=250px>
+               </div>
             </div>
          </div>
          <p>But beyond the joy of fashion, crochet has also become a source of comfort for me. Whenever I feel anxious or overwhelmed, I turn to my yarn and hook. The rhythmic, repetitive motions of crocheting help calm my mind and bring me back to the present moment. It’s almost meditative—each stitch brings me closer to peace, and it becomes easier to quiet my thoughts.</p>
