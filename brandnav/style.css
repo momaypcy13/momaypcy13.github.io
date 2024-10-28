@@ -35,6 +35,10 @@ body {
 	font-weight: bold;
 }
 
+.navbar-logo.inactive {
+	display: none;
+}
+
 .nav-links {
 	list-style: none;
 	display: flex;
@@ -66,6 +70,10 @@ body {
 	gap: 50px;
 	justify-content: center;
 	margin-left: auto;
+}
+
+.search-bar.inactive {
+	display: none;
 }
 
 .search-bar input[type="text"] {
