@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>Depop</title>
+   </head>
+   <body>
+      <div class="outer">
+         <div class="menu" id="menu">
+            <span class="close-btn" onclick="toggleMenu()">×</span>
+            <a href="index.html">Home</a>
+            <a href="menswear.html">Menswear</a>
+            <a href="womenswear.html">Womenswear</a>
+            <navhere>
+              <a href="kids.html">Kids</a>
+           </navhere>
+            <a href="brand.html">Brand</a>
+            <a href="sale.html">Sale</a>
+         </div>
+         <nav class="navbar">
+            <div class="navbar-logo" id="logo">
+               <a href="index.html"><img src="img/depop.jpg" alt="Depop Logo" width="145" height="95"/></a>
+            </div>
+            <ul class="nav-links">
+               <li><a href="menswear.html">Menswear</a></li>
+               <li><a href="womenswear.html">Womenswear</a></li>
+               <navhere>
+                <li><a href="kids.html">Kids</a></li>
+               </navhere>
+               <li><a href="brand.html">Brand</a></li>
+               <li><a href="sale.html">Sale</a></li>
+            </ul>
+            <!-- Search Bar Section -->
+            <div class="search-bar" id="search-bar">
+               <input type="text" placeholder="Search...">
+               <button>Search</button>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <!-- This is the hamburger icon -->
+         </nav>
+         <div class="content">KIDS CONTENT</div>
+      </div>
+      <script>
+         function toggleMenu() {
+           document.getElementById('logo').classList.toggle('inactive');
+           document.getElementById('search-bar').classList.toggle('inactive');
+           document.getElementById('menu').classList.toggle('active');
+         }
+      </script>
+   </body>
+</html>
