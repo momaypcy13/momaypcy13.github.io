@@ -20,7 +20,7 @@
            </navhere>
          </div>
          <nav class="navbar">
-            <div class="logo">
+            <div class="navbar-logo" id="logo">
                <a href="index.html"><img src="img/depop.jpg" alt="Depop Logo" width="145" height="95"/></a>
             </div>
             <ul class="nav-links">
@@ -33,7 +33,7 @@
                </navhere>
             </ul>
             <!-- Search Bar Section -->
-            <div class="search-bar">
+            <div class="search-bar" id="search-bar">
                <input type="text" placeholder="Search...">
                <button>Search</button>
             </div>
@@ -44,6 +44,8 @@
       </div>
       <script>
          function toggleMenu() {
+           document.getElementById('logo').classList.toggle('inactive');
+           document.getElementById('search-bar').classList.toggle('inactive');
            document.getElementById('menu').classList.toggle('active');
          }
       </script>
