@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>Depop</title>
+   </head>
+   <body>
+      <div class="outer">
+         <div class="menu" id="menu">
+            <span class="close-btn" onclick="toggleMenu()">×</span>
+            <navhere>
+               <a href="index.html">Home</a>
+            </navhere>
+            <a href="menswear.html">Menswear</a>
+            <a href="womenswear.html">Womenswear</a>
+            <a href="kids.html">Kids</a>
+            <a href="brand.html">Brand</a>
+            <a href="sale.html">Sale</a>
+         </div>
+         <nav class="navbar">
+            <div class="navbar-logo" id="logo">
+               <a href="index.html"><img src="img/depop.jpg" alt="Depop Logo" width="145" height="95"/></a>
+            </div>
+            <ul class="nav-links">
+               <li><a href="menswear.html">Menswear</a></li>
+               <li><a href="womenswear.html">Womenswear</a></li>
+               <li><a href="kids.html">Kids</a></li>
+               <li><a href="brand.html">Brand</a></li>
+               <li><a href="sale.html">Sale</a></li>
+            </ul>
+            <!-- Search Bar Section -->
+            <div class="search-bar" id="search-bar">
+               <input type="text" placeholder="Search...">
+               <button>Search</button>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <!-- This is the hamburger icon -->
+         </nav>
+         <div class="tile">
+            <img src="img/tile1.webp" id="tile-1" width="1600px" height="2400px">
+            <div class="top-left">Menswear</div>
+         </div>
+         <div class="tile">
+            <img src="img/tile2.webp" id="tile-2" width="1600px" height="2200px">
+            <div class="top-right">Womenswear</div>
+         </div>
+         <div class="tile">
+            <img src="img/tile3.jpg" id="tile-3" width="1800px" height="2800px">
+            <div class="top-left">Kids</div>
+         </div>
+         <div class="tile">
+            <img src="img/tile4.jpg" id="tile-4" width="1600px" height="1200px">
+            <div class="top-right">Sale</div>
+         </div>
+      </div>
+      <script>
+         function toggleMenu() {
+           document.getElementById('logo').classList.toggle('inactive');
+           document.getElementById('search-bar').classList.toggle('inactive');
+           document.getElementById('menu').classList.toggle('active');
+         }
+      </script>
+   </body>
+</html>
