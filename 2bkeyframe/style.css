@@ -1,0 +1,176 @@
+body{
+	margin:0;
+	padding:0;
+   background-color: #999;
+   font-size: 40px;
+   font-family: sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+
+
+.outer{
+  text-align: center;
+}
+
+.page{
+	position:relative;
+	margin-top:0px;
+	background-color: #FFF;
+   max-width:1200px;
+   width:100%;
+  height:100%;
+  display: inline-block;
+   text-align: left;
+   height:98vh;
+}
+
+/* animation 1 */
+
+.a_box{
+   text-align: center;
+   font-size:20px;
+   color:#FFF;
+   background-color: #777;
+   padding:20px;
+   width:200px;
+   height:200px;
+  border-radius:100px;
+
+   box-sizing: border-box;
+   margin:50px;
+   display: inline-block;
+
+   outline: 1px solid transparent;
+
+
+   animation-delay: 2s;
+   animation-fill-mode: forwards;
+   animation-name: change;
+   animation-duration: 5s;
+   animation-timing-function: ease-out;
+}
+
+@keyframes change{
+  
+  0% {
+    background-color: red;
+    border-radius: 100px;
+  }
+  
+  50% {
+    background-color: green;
+    border-radius: 0px;
+    transform: translate(200px, 0px) scale(1.5,1.5);
+  
+ 
+  }
+  100% {
+    background-color:blue;
+    border-radius: 100px;
+    
+  }
+
+}
+
+.b_triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 3s linear infinite, glide 5s linear infinite, changeColor 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+      transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+      transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes glide {
+  0% {
+      transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
+  }
+  100% {
+      transform: translate(-50%, -50%) translate(400px, 400px) rotate(360deg);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+      border-bottom-color: green;
+  }
+  25% {
+      border-bottom-color: blue;
+  }
+  50% {
+      border-bottom-color: red;
+  }
+  75% {
+      border-bottom-color: yellow;
+  }
+  100% {
+      border-bottom-color: green;
+  }
+}
+
+.c_circle {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-100px);
+  }
+}
+
+.d_box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation: transformAndFade 2s forwards;
+  position: relative;
+  left: 25%;
+}
+
+@keyframes transformAndFade {
+  0% {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      opacity: 1;
+  }
+  50% {
+      width: 100px;
+      height: 100px;
+      background-color: gray;
+      border-radius: 50%;
+  }
+  100% {
+      width: 0;
+      height: 0;
+      opacity: 0;
+  }
+}
