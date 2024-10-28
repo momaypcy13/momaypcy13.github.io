@@ -73,6 +73,7 @@ body {
 	gap: 50px;
 	justify-content: center;
 	margin-left: auto;
+	width: 100%;
 }
 
 .search-bar input[type="text"] {
@@ -167,6 +168,15 @@ body {
 
 	.search-bar {
 		margin-left: 0px;
+		gap: 0px;
+	}
+
+	.search-bar input[type="text"] {
+		width: 100%;
+	}
+
+	.search-bar button {
+		display: none;
 	}
 
 	.content{
