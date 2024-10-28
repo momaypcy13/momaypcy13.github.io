@@ -20,7 +20,7 @@
             <a href="sale.html">Sale</a>
          </div>
          <nav class="navbar">
-            <div class="logo">
+            <div class="navbar-logo">
                <a href="index.html"><img src="img/depop.jpg" alt="Depop Logo" width="145" height="95"/></a>
             </div>
             <ul class="nav-links">
@@ -44,6 +44,8 @@
       </div>
       <script>
          function toggleMenu() {
+           document.getElementById('logo').classList.toggle('inactive');
+           document.getElementById('search-bar').classList.toggle('inactive');
            document.getElementById('menu').classList.toggle('active');
          }
       </script>
