@@ -16,6 +16,8 @@ body {
 
 .outer {
 	text-align: center;
+	width: 100%;
+	height: 100%;
 }
 
 .logo {
@@ -147,7 +149,7 @@ body {
 }
 
 .content {
-	margin: 200px;
+	margin-top: 50%;
 	font-size: 5em;
 	color: black;
 	text-align: center;
