@@ -150,6 +150,11 @@ body {
 
 /* Responsive styling */
 @media screen and (max-width: 768px) {
+	.navbar-logo a img {
+		width: 92.5px;
+		height: 67.5px;
+	}
+	
 	.nav-links {
 		display: none;
 	}
