@@ -151,7 +151,7 @@ body {
 /* Responsive styling */
 @media screen and (max-width: 768px) {
 	.navbar-logo a img {
-		width: 92.5px;
+		width: 102.5px;
 		height: 67.5px;
 	}
 	
@@ -166,7 +166,7 @@ body {
 	.search-bar {
 		margin-left: 0px;
 		gap: 0px;
-		width: 100%;
+		width: 50%;
 	}
 
 	.search-bar input[type="text"] {
