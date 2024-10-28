@@ -20,13 +20,6 @@ body {
 	height: 100%;
 }
 
-.logo {
-	font-size: 2em;
-	font-weight: bold;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
 /* Navbar styling */
 .navbar {
 	position: sticky;
