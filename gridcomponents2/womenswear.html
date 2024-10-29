@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="grid.css">
+      <title>Depop</title>
+   </head>
+   <body>
+      <div class="outer">
+         <div class="menu" id="menu">
+            <span class="close-btn" onclick="toggleMenu()">×</span>
+            <a href="index.html">Home</a>
+            <a href="menswear.html">Menswear</a>
+            <navhere>
+               <a href="womenswear.html">Womenswear</a>
+            </navhere>
+            <a href="kids.html">Kids</a>
+            <a href="brand.html">Brand</a>
+            <a href="sale.html">Sale</a>
+         </div>
+         <nav class="navbar">
+            <div class="navbar-logo" id="logo">
+               <a href="index.html"><img src="img/depop.jpg" alt="Depop Logo" width="145" height="95"/></a>
+            </div>
+            <ul class="nav-links">
+               <li><a href="menswear.html">Menswear</a></li>
+               <navhere>
+                  <li><a href="womenswear.html">Womenswear</a></li>
+               </navhere>
+               <li><a href="kids.html">Kids</a></li>
+               <li><a href="brand.html">Brand</a></li>
+               <li><a href="sale.html">Sale</a></li>
+            </ul>
+            <!-- Search Bar Section -->
+            <div class="search-bar" id="search-bar">
+               <input type="text" placeholder="Search...">
+               <button>Search</button>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <!-- This is the hamburger icon -->
+         </nav>
+         <div class="child-container">
+           
+           <!-- Items For Sale -->
+           <div class="row">
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 1</div>
+            </div>
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 2</div>
+            </div>
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 3</div>
+            </div>
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 4</div>
+            </div>
+           </div>
+
+           <div class="row">
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 5</div>
+            </div>
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 6</div>
+            </div>
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 7</div>
+            </div>
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 8</div>
+            </div>
+           </div>
+
+           <div class="row">
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 9</div>
+            </div>
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 10</div>
+            </div>
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 11</div>
+            </div>
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 12</div>
+            </div>
+           </div>
+
+           
+           <div class="row">
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 13</div>
+            </div>
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 14</div>
+            </div>
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 15</div>
+            </div>
+            <div class="col-3">
+               <div class="thumbnail"><img src="img/placeholder.jpg" alt="Placeholder Image"> Clothing Item 16</div>
+            </div>
+           </div>
+
+         </div>
+         <div class="child-container">
+            <nav class="btm-navbar" id="mobile-nav">
+               <div class="row">
+                  <div class="col-1"></div>
+                  <div class="col-2">
+                     <a href="#1">
+                        <div class="btm-navbar-icon"><img src="img/icon-5.jpg" alt="Icon 1" width="75px" height="50px"></div>
+                     </a>
+                  </div>
+                  <div class="col-2">
+                     <a href="#2">
+                        <div class="btm-navbar-icon"><img src="img/icon-1.jpg" alt="Icon 2" width="75px" height="50px"></div>
+                     </a>
+                  </div>
+                  <div class="col-2">
+                     <a href="#3">
+                        <div class="btm-navbar-icon"><img src="img/icon-2.jpg" alt="Icon 1" width="75px" height="50px"></div>
+                     </a>
+                  </div>
+                  <div class="col-2">
+                     <a href="#4">
+                        <div class="btm-navbar-icon"><img src="img/icon-3.jpg" alt="Icon 1" width="75px" height="50px"></div>
+                     </a>
+                  </div>
+                  <div class="col-2">
+                     <a href="#5">
+                        <div class="btm-navbar-icon"><img src="img/icon-4.jpg" alt="Icon 1" width="75px" height="50px"></div>
+                     </a>
+                  </div>
+                  <div class="col-1"></div>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <script>
+         function toggleMenu() {
+           document.getElementById('logo').classList.toggle('inactive');
+           document.getElementById('search-bar').classList.toggle('inactive');
+           document.getElementById('menu').classList.toggle('active');
+           document.getElementById('mobile-nav').classList.toggle('inactive');
+         }
+      </script>
+   </body>
+</html>
